@@ -2,7 +2,7 @@ class Ohce:
     def bien_dit(self):
         return
 
-    def bonjour(self):
+    def bonjour(self, ):
         return
 
     def au_revoir(self):
@@ -12,4 +12,4 @@ class Ohce:
         return
 
     def palindrome(self, palindrome):
-        return
+        return 
