@@ -6,14 +6,16 @@ class SalutationTest(unittest.TestCase):
     def test_bonjour(self):
         retour = "Bonjour"
 
-        resultat = Ohce.bonjour()
+        ohce = Ohce()
+        resultat = ohce.bonjour()
 
         self.assertEqual(retour, resultat)
 
     def test_au_revoir(self):
         retour = "Au revoir"
 
-        resultat = Ohce.au_revoir()
+        ohce = Ohce()
+        resultat = ohce.au_revoir()
 
         self.assertEqual(retour, resultat)
 

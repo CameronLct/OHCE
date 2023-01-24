@@ -6,17 +6,20 @@ class PalindromeTest(unittest.TestCase):
     def test_miroir(self):
         chaine = "Cameron"
 
-        resultat = Ohce.miroir(chaine)
+        ohce =Ohce()
+
+        resultat = ohce.miroir(chaine)
 
         self.assertIn(chaine[::-1], resultat)
 
     def test_palindrome(self):
-        chaine = "kayak"
-        retour = chaine + "Bien dit"
+        palindrome = "kayak"
+        retour = "Bonjour" + palindrome + "Bien dit" + "Au revoir"
 
-        resultat = Ohce.palindrome(chaine)
+        ohce = Ohce()
+        resultat = ohce.palindrome(palindrome)
 
-        self.assertEqual(retour, resultat)
+        self.assertIn(retour, resultat)
 
 if __name__ == '__main__':
     unittest.main()
