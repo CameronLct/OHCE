@@ -1,10 +1,16 @@
+from src.Langue.Constantes import Constantes
+from src.Periode import Periode
+
+
 class LangueFr:
 
-    def bonjour(self):
-        return "Bonjour"
+    def bonjour(self, periode):
+        return Constantes.Francais.BONSOIR \
+            if periode in (Periode.SOIR, Periode.NUIT) \
+            else Constantes.Francais.BONJOUR
 
     def bien_dit(self):
-        return "Bien dit"
+        return Constantes.Francais.BIEN_DIT
 
     def au_revoir(self):
-        return "Au revoir"
+        return Constantes.Francais.AU_REVOIR
