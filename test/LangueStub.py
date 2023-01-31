@@ -1,5 +1,5 @@
 class LangueStub:
-    def bonjour(self):
+    def bonjour(self, periode):
         return ""
 
     def au_revoir(self):
